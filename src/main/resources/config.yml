@@ -1,0 +1,31 @@
+GENERAL:
+  NO_PERMISSION: "§cYou don't have permission to do this command !"
+  BAD_FORMAT: "§cBad Format !"
+
+COMBAT:
+  PERMISSION_BYPASS_COMBAT: "mercurytag.bypass"
+  COOLDOWN: 30 # Time in seconds.
+  START_COMBAT: "§eVous êtes maintenant en combat pendant §b§l%time% secondes."
+  FINISH_COMBAT: "§eVous n'êtes plus en combat."
+  COMMAND_COMBAT: "§eVous êtes en combat pendant encore §b§l%time% secondes."
+  CANT_EXECUTE_COMMAND: "§cVous ne pouvez pas exécuter cette commande en combat."
+
+EVENTS:
+  DISABLE_TAG_ON_KICK: true # Enable the remove of tag of player if the player get kick.
+  TAG_IF_POTION_AFFECT: true # Tag player who recieve negative effect due to PotionSplashEvent
+  ENABLE_DEATHMESSAGE_ON_QUIT_EVENT: true
+  BROADCAST_MESSAGE_ON_QUIT: "§eLe joueur §6§l%player% §ea été tué car il a §c§ldéconnecté en combat"
+  ENABLE_DEATHMESSAGE: true
+  DEATHMESSAGE_DUO: "§7%death% a été tué par %killer%."
+  DEATHMESSAGE_SOLO: "%death% est mort."
+
+BLOCKED_COMMANDS:
+  COMMAND_ALREADY_REGISTER: "§cCette commande est déjà enregistrée !"
+  COMMAND_LOCKED_SUCCESSFULY: "§eVous venez de bloquer la commande : §c§l%command% !"
+  COMMAND_NOT_ALREADY_REGISTER: "§cCette commande n'est pas encore enregistré !"
+  COMMAND_UNLOCKED_SUCCESSFULY: "§cVous venez de §adébloquer §cla commande : §c§l%command% !"
+  MESSAGES:
+    - "§eListe des §6§lcommandes bloquées§e:"
+    - ""
+    - "%list"
+    - ""

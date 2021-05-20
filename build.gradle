@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.mercury'
+version '1.0-SNAPSHOT'
+compileJava.options.encoding = "UTF-8"
+
+configurations {
+    jarIncluded
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.18'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.18'
+    compile fileTree("libs")
+    jarIncluded fileTree("libs/jar_included")
+}
+
+jar {
+    from {
+        configurations.jarIncluded.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
