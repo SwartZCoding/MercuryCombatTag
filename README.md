@@ -32,7 +32,7 @@
 | **Permission**           | **Description**                            |
 | -------------------------| ------------------------------------------ |
 | ct.admin                 | Permit to add / remove commands blacklist  |
-| <custom perm in config>  | Bypass combat tagging                      |
+| custom perm in config    | Bypass combat tagging                      |
 	
 	
 ## Commands
